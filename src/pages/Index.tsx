@@ -1,12 +1,23 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import NavBar from '@/components/NavBar';
+import HeroSection from '@/components/sections/HeroSection';
+import AboutSection from '@/components/sections/AboutSection';
+import NominationsSection from '@/components/sections/NominationsSection';
+import GallerySection from '@/components/sections/GallerySection';
+import RegistrationSection from '@/components/sections/RegistrationSection';
+import ResultsSection from '@/components/sections/ResultsSection';
+import ContactsSection from '@/components/sections/ContactsSection';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
-      </div>
+    <div className="min-h-screen" style={{ background: 'var(--dark-bg)' }}>
+      <NavBar />
+      <HeroSection />
+      <AboutSection />
+      <NominationsSection />
+      <GallerySection />
+      <RegistrationSection />
+      <ResultsSection />
+      <ContactsSection />
     </div>
   );
 };
