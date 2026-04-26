@@ -85,7 +85,7 @@ const ContactsSection = () => (
           <div className="mt-6 p-5 rounded-xl border border-white/5 card-show">
             <div className="text-white/30 text-xs tracking-widest uppercase mb-2">Пресс-служба</div>
             <p className="text-white/60 text-sm">
-              По вопросам СМИ и партнёрства: <span className="text-neon-blue">press@yaartist.ru</span>
+              По вопросам СМИ и партнёрства: <span className="text-neon-blue">indigo_fest@mail.ru</span>
             </p>
           </div>
         </div>
