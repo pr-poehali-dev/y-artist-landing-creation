@@ -11,10 +11,12 @@ const HeroSection = () => {
         className="absolute inset-0 w-full h-full object-cover object-center z-0"
       />
 
-      {/* Градиент снизу — чтобы текст читался */}
+      {/* Затемнение + градиент снизу */}
+      <div className="absolute inset-0 z-10 pointer-events-none"
+        style={{ background: 'rgba(5,5,26,.45)' }} />
       <div className="absolute inset-0 z-10 pointer-events-none"
         style={{
-          background: 'linear-gradient(to bottom, rgba(6,6,26,.25) 0%, rgba(6,6,26,.1) 30%, rgba(6,6,26,.7) 65%, #06061a 100%)',
+          background: 'linear-gradient(to bottom, rgba(5,5,26,.5) 0%, transparent 25%, transparent 50%, rgba(5,5,26,.8) 75%, #05051a 100%)',
         }} />
 
       {/* Градиент сверху под навбар */}
@@ -30,8 +32,8 @@ const HeroSection = () => {
           <span className="text-neon-pink text-xs font-semibold tracking-widest uppercase">Премия 2026</span>
         </div>
 
-        <p className="text-white/70 text-lg md:text-xl max-w-xl mx-auto mb-10 leading-relaxed"
-          style={{ textShadow: '0 2px 12px rgba(0,0,0,.8)' }}>
+        <p className="text-white text-lg md:text-xl max-w-xl mx-auto mb-10 leading-relaxed font-semibold"
+          style={{ textShadow: '0 2px 16px rgba(0,0,0,1), 0 0 40px rgba(0,0,0,.9)' }}>
           Ежегодная премия, отмечающая таланты,<br />которые зажигают сцену и покоряют сердца.
         </p>
 
