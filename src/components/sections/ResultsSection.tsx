@@ -1,20 +1,22 @@
 const results = [
-  { nomination: 'Голос года',          winner: 'Anya Volkov',        author: 'Сольная карьера',   color: '#ff3cac' },
-  { nomination: 'Движение и пластика', winner: 'NDC Company',         author: 'Коллектив',         color: '#3cf0ff' },
-  { nomination: 'Театральный прорыв',  winner: 'Театр Меридиан',     author: 'Постановка «Тень»', color: '#f5c842' },
-  { nomination: 'Кинообраз',           winner: 'Роман Светлов',      author: 'Режиссёр',          color: '#ff3cac' },
-  { nomination: 'Живая сцена',         winner: 'Группа Axis',        author: 'Тур 2025',          color: '#3cf0ff' },
-  { nomination: 'Открытие года',       winner: 'Лиза Март',          author: 'Певица',            color: '#f5c842' },
+  { nomination: 'Голос года',          winner: 'Anya Volkov',        author: 'Сольная карьера',   color: '#ff3cac', medal: '🥇' },
+  { nomination: 'Движение и пластика', winner: 'NDC Company',         author: 'Коллектив',         color: '#3cf0ff', medal: '🥇' },
+  { nomination: 'Театральный прорыв',  winner: 'Театр Меридиан',     author: 'Постановка «Тень»', color: '#f5c842', medal: '🥇' },
+  { nomination: 'Кинообраз',           winner: 'Роман Светлов',      author: 'Режиссёр',          color: '#ff3cac', medal: '🥇' },
+  { nomination: 'Живая сцена',         winner: 'Группа Axis',        author: 'Тур 2025',          color: '#3cf0ff', medal: '🥇' },
+  { nomination: 'Открытие года',       winner: 'Лиза Март',          author: 'Певица',            color: '#f5c842', medal: '🥇' },
 ];
 
 const ResultsSection = () => (
   <section id="results" className="relative py-32 overflow-hidden"
     style={{ background: 'linear-gradient(180deg, #06061a 0%, #0d0d2e 50%, #06061a 100%)' }}>
 
-    <div className="absolute right-1/4 top-1/2 w-80 h-80 rounded-full blur-3xl opacity-8 pointer-events-none"
+    <div className="absolute right-1/4 top-1/2 w-96 h-96 rounded-full blur-3xl opacity-10 pointer-events-none"
       style={{ background: '#f5c842' }} />
+    <div className="absolute left-1/4 top-1/3 w-64 h-64 rounded-full blur-3xl opacity-6 pointer-events-none"
+      style={{ background: '#ff3cac' }} />
 
-    <div className="relative z-10 max-w-6xl mx-auto px-6">
+    <div className="relative z-10 max-w-4xl mx-auto px-6">
       <div className="text-center mb-16">
         <div className="text-gold text-xs tracking-[0.3em] uppercase mb-4 font-semibold">Победители</div>
         <h2 className="text-5xl md:text-6xl font-bold text-white leading-tight">
@@ -23,40 +25,54 @@ const ResultsSection = () => (
         </h2>
       </div>
 
-      {/* Таблица */}
-      <div className="space-y-2">
-        <div className="grid grid-cols-12 gap-4 px-5 pb-3 border-b border-white/5">
-          <div className="col-span-1 text-white/20 text-xs tracking-widest uppercase">#</div>
-          <div className="col-span-4 text-white/20 text-xs tracking-widest uppercase">Номинация</div>
-          <div className="col-span-4 text-white/20 text-xs tracking-widest uppercase">Победитель</div>
-          <div className="col-span-3 text-white/20 text-xs tracking-widest uppercase">Статус</div>
-        </div>
-
+      {/* Карточки */}
+      <div className="space-y-3">
         {results.map((r, i) => (
-          <div key={r.nomination}
-            className="group grid grid-cols-12 gap-4 px-5 py-4 rounded-xl hover:bg-white/3 transition-all duration-300 cursor-pointer">
-            <div className="col-span-1 flex items-center">
-              <div className="w-7 h-7 rounded-lg flex items-center justify-center text-xs font-bold"
-                style={{ background: r.color + '20', color: r.color, border: `1px solid ${r.color}40` }}>
-                {i + 1}
+          <div key={r.nomination} className="group relative rounded-2xl overflow-hidden transition-all duration-500 hover:scale-[1.01]"
+            style={{ background: 'rgba(13,13,46,.8)', border: `1px solid ${r.color}25` }}>
+
+            {/* Левая цветная полоса */}
+            <div className="absolute left-0 top-0 bottom-0 w-1 rounded-l-2xl transition-all duration-300 group-hover:w-1.5"
+              style={{ background: r.color }} />
+
+            {/* Фоновый свет при ховере */}
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+              style={{ background: `radial-gradient(ellipse at left, ${r.color}08 0%, transparent 60%)` }} />
+
+            <div className="relative flex items-center gap-5 px-7 py-5">
+
+              {/* Номер */}
+              <div className="w-9 h-9 rounded-xl flex items-center justify-center text-sm font-black flex-shrink-0"
+                style={{ background: r.color + '15', color: r.color, border: `1px solid ${r.color}35` }}>
+                {String(i + 1).padStart(2, '0')}
+              </div>
+
+              {/* Номинация */}
+              <div className="flex-1 min-w-0">
+                <div className="text-xs tracking-widest uppercase mb-1 font-semibold"
+                  style={{ color: r.color }}>
+                  {r.nomination}
+                </div>
+                <div className="text-white font-bold text-lg leading-tight truncate">{r.winner}</div>
+                <div className="text-white/40 text-xs mt-0.5">{r.author}</div>
+              </div>
+
+              {/* Звезда победителя */}
+              <div className="flex-shrink-0 flex flex-col items-center gap-1">
+                <div className="text-2xl" style={{ filter: `drop-shadow(0 0 8px ${r.color})` }}>★</div>
+                <div className="text-white/20 text-[10px] tracking-widest uppercase">Победитель</div>
               </div>
             </div>
-            <div className="col-span-4 flex items-center">
-              <span className="text-white/60 text-sm group-hover:text-white/80 transition-colors">{r.nomination}</span>
-            </div>
-            <div className="col-span-4 flex items-center">
-              <span className="text-white font-semibold text-sm">{r.winner}</span>
-            </div>
-            <div className="col-span-3 flex items-center justify-between">
-              <span className="text-white/40 text-xs">{r.author}</span>
-              <span className="text-lg" style={{ color: r.color }}>★</span>
-            </div>
+
+            {/* Нижняя линия-акцент */}
+            <div className="absolute bottom-0 left-7 right-7 h-px opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              style={{ background: `linear-gradient(90deg, ${r.color}, transparent)` }} />
           </div>
         ))}
       </div>
 
       {/* Архив */}
-      <div className="mt-12">
+      <div className="mt-14">
         <div className="text-center text-white/30 text-sm mb-5">Архив результатов</div>
         <div className="flex flex-wrap gap-3 justify-center">
           {[
