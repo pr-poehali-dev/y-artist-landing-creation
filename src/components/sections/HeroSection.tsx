@@ -25,7 +25,7 @@ const HeroSection = () => {
         <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-neon-pink/50"
           style={{ background: 'rgba(5,5,26,.6)', backdropFilter: 'blur(10px)' }}>
           <span className="w-2 h-2 rounded-full bg-neon-pink pulse-slow" />
-          <span className="text-neon-pink text-xs font-semibold tracking-widest uppercase">Премия 2026</span>
+          <span className="text-neon-pink text-xs font-semibold tracking-widest uppercase">ПРЕМИЯ 2026-2027</span>
         </div>
 
         <p className="text-white font-semibold text-lg md:text-xl max-w-xl mx-auto leading-relaxed"
