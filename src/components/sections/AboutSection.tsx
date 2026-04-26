@@ -31,9 +31,7 @@ const AboutSection = () => (
             <span className="text-white">звёзды</span>
           </h2>
           <p className="text-white/60 text-lg leading-relaxed mb-5">«Я - Артист» — это не просто церемония. Это момент, когда сцена признаёт лучших — тех, кто отдаёт себя искусству без остатка.</p>
-          <p className="text-white/45 leading-relaxed">
-            Каждый год мы выбираем исполнителей, режиссёров, хореографов и творцов, которые двигают культуру вперёд. Наши лауреаты — это легенды завтрашнего дня.
-          </p>
+          <p className="text-white/45 leading-relaxed">Каждый год мы выбираем исполнителей, актеров, танцовщиков, музыкантов и творцов, которые двигают творчество вперёд. Наши лауреаты — это легенды завтрашнего дня.</p>
           <div className="mt-10 flex items-center gap-6">
             <div className="h-px flex-1" style={{ background: 'linear-gradient(to right, rgba(255,60,172,.6), transparent)' }} />
             <span className="text-gold text-sm tracking-widest uppercase font-semibold">Est. 2021</span>
