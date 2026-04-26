@@ -91,13 +91,25 @@ const ResultsSection = () => (
       </div>
 
       {/* Архив */}
-      <div className="mt-12 flex gap-3 justify-center items-center">
-        <span className="text-white/30 text-sm">Архив:</span>
-        {['2025', '2024', '2023', '2022'].map(y => (
-          <button key={y} className="text-white/30 hover:text-neon-pink text-sm transition-colors underline underline-offset-4">
-            {y}
-          </button>
-        ))}
+      <div className="mt-12">
+        <div className="text-center text-white/30 text-sm mb-5">Архив результатов</div>
+        <div className="flex flex-wrap gap-3 justify-center">
+          {[
+            { year: '2025', url: '#' },
+            { year: '2024', url: '#' },
+            { year: '2023', url: '#' },
+            { year: '2022', url: '#' },
+          ].map(({ year, url }) => (
+            <a key={year} href={url} download
+              className="flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold transition-all duration-300 hover:border-gold/60 hover:text-gold group"
+              style={{ border: '1px solid rgba(245,200,66,.2)', color: 'rgba(255,255,255,.4)', background: 'rgba(245,200,66,.04)' }}>
+              <svg className="w-4 h-4 flex-shrink-0 group-hover:translate-y-0.5 transition-transform" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+              </svg>
+              Итоги {year} (PDF)
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   </section>
