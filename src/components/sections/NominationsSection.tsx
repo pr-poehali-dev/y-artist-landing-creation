@@ -6,7 +6,7 @@ const nominations = [
   { id: 3, emoji: <img src="https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/7bfc4b6e-7b07-40f5-9583-f1c519d5cd75.png" className="w-24 h-24 object-contain inline-block" />, title: 'Театральный прорыв',   desc: 'Спектакль или актёрская работа, изменившая театральный ландшафт.', color: '#f5c842', tags: ['Драма','Комедия','Мюзикл'] },
   { id: 4, emoji: <img src="https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/9d847824-036d-48c8-8250-6cc8a02f5c9b.png" className="w-20 h-20 object-contain inline-block" />, title: 'Лучший образ',            desc: 'Выдающаяся роль или режиссёрская работа в кино или сериалах.',     color: '#ff3cac', tags: ['Арт-хаус','Мейнстрим','Короткий метр'] },
   { id: 5, emoji: '🎸', title: 'Живая сцена',          desc: 'Лучшее живое выступление или концертный тур года.',                color: '#3cf0ff', tags: ['Рок','Инди','Электроника'] },
-  { id: 6, emoji: <img src="https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/1919eb31-b78a-4757-b949-0402f0ad0e5c.png" className="w-20 h-20 object-contain inline-block" />, title: 'Открытие года',        desc: 'Новый артист, заявивший о себе ярко и убедительно.',              color: '#f5c842', tags: ['Дебют','Независимые','Молодые'] },
+  { id: 6, emoji: <img src="https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/1919eb31-b78a-4757-b949-0402f0ad0e5c.png" className="w-24 h-24 object-contain inline-block" />, title: 'Открытие года',        desc: 'Новый артист, заявивший о себе ярко и убедительно.',              color: '#f5c842', tags: ['Дебют','Независимые','Молодые'] },
 ];
 
 const NominationsSection = () => {
