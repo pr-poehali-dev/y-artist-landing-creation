@@ -60,7 +60,7 @@ const AboutSection = () => (
               <div className="text-white/50 text-xs tracking-[0.35em] uppercase mb-6">Международная премия</div>
 
               <div className="grid grid-cols-2 gap-3">
-                {['Вокал', 'Хореография', 'Театр', 'Кино'].map(cat => (
+                {['Вокал', 'Хореография', 'Театр', 'Музыка'].map(cat => (
                   <div key={cat} className="rounded-lg py-3 text-center"
                     style={{ border: '1px solid rgba(255,42,170,.25)', background: 'rgba(255,42,170,.08)', backdropFilter: 'blur(4px)' }}>
                     <span className="text-white/80 text-sm font-semibold">{cat}</span>
