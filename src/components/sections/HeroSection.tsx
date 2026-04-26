@@ -29,9 +29,8 @@ const HeroSection = () => {
         </div>
 
         <p className="text-white font-semibold text-lg md:text-xl max-w-xl mx-auto leading-relaxed"
-          style={{ textShadow: '0 2px 12px rgba(0,0,0,.95), 0 0 30px rgba(0,0,0,.8)' }}>
-          Ежегодная премия, отмечающая таланты,<br />которые зажигают сцену и покоряют сердца.
-        </p>
+          style={{ textShadow: '0 2px 12px rgba(0,0,0,.95), 0 0 30px rgba(0,0,0,.8)' }}>Ежегодная премия, отмечающая молодые таланты,
+которые зажигают сцену и покоряют сердца.</p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button onClick={() => scroll('registration')} className="btn-gold px-10 py-4 text-sm rounded-xl">
