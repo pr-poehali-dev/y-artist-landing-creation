@@ -1,86 +1,42 @@
 import { useState } from 'react';
 
 const nominations = [
-  {
-    id: 1,
-    icon: '◈',
-    color: 'neon-purple',
-    title: 'Прорыв года',
-    desc: 'Проект, открывший совершенно новое направление в своей области.',
-    criteria: ['Новизна подхода', 'Масштаб влияния', 'Устойчивость результата'],
-  },
-  {
-    id: 2,
-    icon: '⬡',
-    color: 'neon-cyan',
-    title: 'Визуальный язык',
-    desc: 'Работа, переосмыслившая визуальную коммуникацию и эстетику.',
-    criteria: ['Оригинальность', 'Исполнение', 'Культурный резонанс'],
-  },
-  {
-    id: 3,
-    icon: '△',
-    color: 'neon-gold',
-    title: 'Технология будущего',
-    desc: 'Решение, которое изменит взаимодействие человека и технологии.',
-    criteria: ['Техническая сложность', 'UX-инновация', 'Потенциал роста'],
-  },
-  {
-    id: 4,
-    icon: '◎',
-    color: 'neon-purple',
-    title: 'Социальный удар',
-    desc: 'Инициатива с измеримым позитивным эффектом для общества.',
-    criteria: ['Охват аудитории', 'Реальные изменения', 'Устойчивость'],
-  },
-  {
-    id: 5,
-    icon: '✦',
-    color: 'neon-cyan',
-    title: 'Медиа и контент',
-    desc: 'Формат или история, которые захватили умы и сердца миллионов.',
-    criteria: ['Виральность', 'Глубина нарратива', 'Производство'],
-  },
-  {
-    id: 6,
-    icon: '⬢',
-    color: 'neon-gold',
-    title: 'Лидер нового времени',
-    desc: 'Личность, воплощающая новую философию руководства и развития.',
-    criteria: ['Команда', 'Результаты', 'Видение'],
-  },
+  { id: 1, emoji: '🎤', title: 'Голос года',          desc: 'Лучший вокальный исполнитель или коллектив, покоривший сцену.',    color: '#ff3cac', tags: ['Поп','R&B','Джаз'] },
+  { id: 2, emoji: '💃', title: 'Движение и пластика',  desc: 'Лучший хореограф или танцевальный коллектив сезона.',              color: '#3cf0ff', tags: ['Хип-хоп','Классика','Современный'] },
+  { id: 3, emoji: '🎭', title: 'Театральный прорыв',   desc: 'Спектакль или актёрская работа, изменившая театральный ландшафт.', color: '#f5c842', tags: ['Драма','Комедия','Мюзикл'] },
+  { id: 4, emoji: '🎬', title: 'Кинообраз',            desc: 'Выдающаяся роль или режиссёрская работа в кино или сериалах.',     color: '#ff3cac', tags: ['Арт-хаус','Мейнстрим','Короткий метр'] },
+  { id: 5, emoji: '🎸', title: 'Живая сцена',          desc: 'Лучшее живое выступление или концертный тур года.',                color: '#3cf0ff', tags: ['Рок','Инди','Электроника'] },
+  { id: 6, emoji: '🌟', title: 'Открытие года',        desc: 'Новый артист, заявивший о себе ярко и убедительно.',              color: '#f5c842', tags: ['Дебют','Независимые','Молодые'] },
 ];
-
-const colorMap: Record<string, string> = {
-  'neon-purple': '#bf5fff',
-  'neon-cyan': '#00ffee',
-  'neon-gold': '#ffd93d',
-};
 
 const NominationsSection = () => {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
-    <section id="nominations" className="relative py-32 overflow-hidden">
-      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-80 h-80 bg-neon-cyan/5 rounded-full blur-3xl" />
+    <section id="nominations" className="relative py-32 overflow-hidden"
+      style={{ background: '#06061a' }}>
+
+      <div className="absolute left-0 top-1/2 -translate-y-1/2 w-72 h-72 rounded-full blur-3xl opacity-8 pointer-events-none"
+        style={{ background: '#3cf0ff' }} />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <div className="text-neon-gold text-sm tracking-[0.3em] uppercase mb-4 font-medium">Категории</div>
-          <h2 className="text-5xl md:text-6xl font-black text-white leading-tight">
-            Номинации<br/>
-            <span className="text-neon-cyan text-glow-cyan">2026</span>
+          <div className="text-gold text-xs tracking-[0.3em] uppercase mb-4 font-semibold">Категории</div>
+          <h2 className="text-5xl md:text-6xl font-bold text-white leading-tight">
+            Номинации<br />
+            <span className="text-3d-gold">2026</span>
           </h2>
         </div>
 
         {/* Бегущая строка */}
-        <div className="overflow-hidden mb-16 border-y border-white/5 py-4">
+        <div className="overflow-hidden mb-16 py-4 border-y border-white/5">
           <div className="marquee-track">
             {[...Array(2)].map((_, bi) => (
-              <div key={bi} className="flex items-center gap-8 pr-8">
-                {nominations.map((n) => (
-                  <span key={n.id + bi * 10} className="text-white/20 text-sm tracking-widest uppercase whitespace-nowrap flex items-center gap-3">
-                    <span style={{ color: colorMap[n.color] }}>{n.icon}</span>
+              <div key={bi} className="flex items-center gap-10 pr-10">
+                {nominations.map(n => (
+                  <span key={`${n.id}-${bi}`}
+                    className="text-white/20 text-sm tracking-widest uppercase whitespace-nowrap flex items-center gap-3">
+                    <span style={{ color: n.color }}>{n.emoji}</span>
                     {n.title}
                   </span>
                 ))}
@@ -89,51 +45,42 @@ const NominationsSection = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {nominations.map((nom) => (
-            <div
-              key={nom.id}
-              className="group relative clip-polygon bg-white/3 border border-white/10 p-8 cursor-pointer transition-all duration-500"
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {nominations.map(nom => (
+            <div key={nom.id}
+              className="group relative rounded-2xl p-8 cursor-pointer transition-all duration-400 card-show"
               style={{
-                borderColor: hovered === nom.id ? colorMap[nom.color] + '60' : undefined,
-                background: hovered === nom.id ? colorMap[nom.color] + '08' : undefined,
+                borderColor: hovered === nom.id ? nom.color + '55' : undefined,
+                boxShadow: hovered === nom.id ? `0 0 30px ${nom.color}18` : undefined,
               }}
               onMouseEnter={() => setHovered(nom.id)}
-              onMouseLeave={() => setHovered(null)}
-            >
-              <div
-                className="text-4xl mb-6 transition-all duration-300"
-                style={{ color: colorMap[nom.color], textShadow: hovered === nom.id ? `0 0 20px ${colorMap[nom.color]}` : 'none' }}
-              >
-                {nom.icon}
+              onMouseLeave={() => setHovered(null)}>
+
+              <div className="absolute top-0 left-0 right-0 h-px rounded-t-2xl transition-opacity duration-300"
+                style={{
+                  background: `linear-gradient(90deg, transparent, ${nom.color}, transparent)`,
+                  opacity: hovered === nom.id ? 1 : 0,
+                }} />
+
+              <div className="text-5xl mb-5 transition-transform duration-300 group-hover:scale-110 inline-block">
+                {nom.emoji}
               </div>
 
               <h3 className="text-xl font-bold text-white mb-3">{nom.title}</h3>
               <p className="text-white/50 text-sm leading-relaxed mb-6">{nom.desc}</p>
 
-              <div className="space-y-2">
-                {nom.criteria.map((c) => (
-                  <div key={c} className="flex items-center gap-2">
-                    <div className="w-1 h-1 rounded-full" style={{ background: colorMap[nom.color] }} />
-                    <span className="text-white/40 text-xs">{c}</span>
-                  </div>
+              <div className="flex flex-wrap gap-2">
+                {nom.tags.map(tag => (
+                  <span key={tag} className="px-3 py-1 rounded-full text-xs font-medium border"
+                    style={{
+                      color: nom.color,
+                      borderColor: nom.color + '40',
+                      background: nom.color + '10',
+                    }}>
+                    {tag}
+                  </span>
                 ))}
               </div>
-
-              <div
-                className="absolute bottom-0 left-0 h-px transition-all duration-500"
-                style={{
-                  background: colorMap[nom.color],
-                  width: hovered === nom.id ? '100%' : '0%',
-                }}
-              />
-              <div
-                className="absolute top-0 right-0 w-px transition-all duration-500"
-                style={{
-                  background: colorMap[nom.color],
-                  height: hovered === nom.id ? '100%' : '0%',
-                }}
-              />
             </div>
           ))}
         </div>
