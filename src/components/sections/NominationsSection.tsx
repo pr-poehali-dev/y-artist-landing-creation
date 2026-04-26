@@ -24,7 +24,7 @@ const NominationsSection = () => {
           <div className="text-gold text-xs tracking-[0.3em] uppercase mb-4 font-semibold">Категории</div>
           <h2 className="text-5xl md:text-6xl font-bold text-white leading-tight">
             Номинации<br />
-            <span className="text-3d-gold">2026</span>
+            <span className="text-3d-gold">2026-2027</span>
           </h2>
         </div>
 
