@@ -38,7 +38,7 @@ const ContactsSection = () => (
           <div className="text-gold text-xs tracking-[0.3em] uppercase mb-6 font-semibold">Не пропусти</div>
           <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             Заявки<br />
-            <span className="text-3d-gold">до 1 сентября</span>
+            <span className="text-3d-gold">до 1-го числа каждого месяца</span>
           </h2>
           <p className="text-white/50 max-w-lg mx-auto mb-10">
             Осталось меньше 5 месяцев. Начни оформлять заявку прямо сейчас.
