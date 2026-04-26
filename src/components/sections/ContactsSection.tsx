@@ -1,6 +1,6 @@
 const contacts = [
   { label: 'Email',     value: 'hello@yaartist.ru',  emoji: '✉️', color: '#ff3cac' },
-  { label: 'Telegram',  value: '@ya_artist_award',   emoji: '✈️', color: '#3cf0ff' },
+  { label: 'Телефон',   value: '+7 (000) 000-00-00',  emoji: '📞', color: '#3cf0ff' },
   { label: 'Instagram', value: '@yaartist',          emoji: '📸', color: '#f5c842' },
 ];
 
