@@ -118,10 +118,8 @@ const ContactsSection = () => (
 
       {/* Футер */}
       <div className="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
-        <div className="text-2xl font-bold text-white text-3d-gold">Я АРТИСТ</div>
-        <div className="text-white/20 text-xs tracking-widest uppercase">
-          © 2026 Я Артист · Все права защищены
-        </div>
+        <div className="text-2xl font-bold text-white text-3d-gold">Я - АРТИСТ</div>
+        <div className="text-white/20 text-xs tracking-widest uppercase">© 2026 Я - Артист · Все права защищены</div>
       </div>
     </div>
   </section>
