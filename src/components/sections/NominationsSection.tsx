@@ -3,7 +3,7 @@ import { useState } from 'react';
 const nominations = [
   { id: 1, emoji: <img src="https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/9a355d9f-119b-45c7-8cf6-f6c55e53f4d3.png" className="w-20 h-20 object-contain inline-block" />, title: 'Голос года',          desc: 'Лучший вокальный исполнитель или коллектив, покоривший сцену.',    color: '#ff3cac', tags: ['Поп','R&B','Джаз'] },
   { id: 2, emoji: '💃', title: 'Движение и пластика',  desc: 'Лучший хореограф или танцевальный коллектив сезона.',              color: '#3cf0ff', tags: ['Хип-хоп','Классика','Современный'] },
-  { id: 3, emoji: '🎭', title: 'Театральный прорыв',   desc: 'Спектакль или актёрская работа, изменившая театральный ландшафт.', color: '#f5c842', tags: ['Драма','Комедия','Мюзикл'] },
+  { id: 3, emoji: <img src="https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/550de959-cfad-4835-a1b7-80742f66b711.png" className="w-20 h-20 object-contain inline-block" />, title: 'Театральный прорыв',   desc: 'Спектакль или актёрская работа, изменившая театральный ландшафт.', color: '#f5c842', tags: ['Драма','Комедия','Мюзикл'] },
   { id: 4, emoji: '🎬', title: 'Кинообраз',            desc: 'Выдающаяся роль или режиссёрская работа в кино или сериалах.',     color: '#ff3cac', tags: ['Арт-хаус','Мейнстрим','Короткий метр'] },
   { id: 5, emoji: '🎸', title: 'Живая сцена',          desc: 'Лучшее живое выступление или концертный тур года.',                color: '#3cf0ff', tags: ['Рок','Инди','Электроника'] },
   { id: 6, emoji: '🌟', title: 'Открытие года',        desc: 'Новый артист, заявивший о себе ярко и убедительно.',              color: '#f5c842', tags: ['Дебют','Независимые','Молодые'] },
