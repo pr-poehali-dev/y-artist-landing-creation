@@ -4,7 +4,14 @@ const contacts = [
   { label: 'Instagram', value: '@yaartist',          emoji: '📸', color: '#f5c842' },
 ];
 
-const partners = ['MediaHouse', 'TechVector', 'NordBureau', 'Axis Studio', 'Meridian', 'DataFlow'];
+const partners = [
+  { label: 'MediaHouse', img: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/9f7cfc08-566b-45da-b5ab-73c1809fac3a.png' },
+  { label: 'TechVector', img: null },
+  { label: 'NordBureau', img: null },
+  { label: 'Axis Studio', img: null },
+  { label: 'Meridian', img: null },
+  { label: 'DataFlow', img: null },
+];
 
 const ContactsSection = () => (
   <section id="contacts" className="relative py-32 overflow-hidden"
@@ -88,9 +95,11 @@ const ContactsSection = () => (
           <div className="text-gold text-xs tracking-[0.3em] uppercase mb-8 font-semibold">Партнёры и жюри</div>
           <div className="grid grid-cols-2 gap-3 mb-8">
             {partners.map(p => (
-              <div key={p}
-                className="rounded-xl border border-white/10 py-4 px-6 text-center text-white/40 text-sm hover:text-white/70 hover:border-white/20 transition-all duration-300 cursor-pointer card-show">
-                {p}
+              <div key={p.label}
+                className="rounded-xl border border-white/10 py-4 px-6 text-center text-white/40 text-sm hover:text-white/70 hover:border-white/20 transition-all duration-300 cursor-pointer card-show flex items-center justify-center">
+                {p.img
+                  ? <img src={p.img} alt={p.label} className="h-8 object-contain opacity-60 hover:opacity-90 transition-opacity" />
+                  : p.label}
               </div>
             ))}
           </div>
