@@ -47,7 +47,7 @@ const HeroSection = () => {
       {/* Счётчики поверх фото снизу */}
       <div className="absolute bottom-6 left-0 right-0 z-20 flex gap-10 justify-center">
         {[
-          { val: '12',   label: 'Номинаций' },
+          { val: '6',   label: 'Номинаций' },
           { val: '500+', label: 'Участников' },
           { val: '5',    label: 'Лет на сцене' },
         ].map(s => (
