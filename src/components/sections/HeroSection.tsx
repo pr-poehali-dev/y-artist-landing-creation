@@ -56,6 +56,19 @@ const HeroSection = () => {
 
       <canvas ref={canvasRef} className="absolute inset-0 z-0 pointer-events-none" />
 
+      {/* Фоновое изображение логотипа */}
+      <div className="absolute inset-0 z-0 pointer-events-none flex items-center justify-center">
+        <img
+          src="https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/a5a9222a-7a7f-40d5-9f91-38b401365a34.jpg"
+          alt=""
+          className="w-full h-full object-cover"
+          style={{ opacity: 0.18, filter: 'saturate(1.4) blur(1px)' }}
+        />
+        {/* Затемняющий градиент поверх */}
+        <div className="absolute inset-0"
+          style={{ background: 'radial-gradient(ellipse at 50% 40%, rgba(26,10,61,.55) 0%, rgba(6,6,26,.85) 70%, #06061a 100%)' }} />
+      </div>
+
       {/* Прожекторы сверху */}
       {[0, 1, 2, 3].map((i) => (
         <div key={i} className="absolute top-0 pointer-events-none"
