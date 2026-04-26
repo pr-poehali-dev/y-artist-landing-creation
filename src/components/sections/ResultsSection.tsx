@@ -25,48 +25,52 @@ const ResultsSection = () => (
         </h2>
       </div>
 
-      {/* Карточки */}
-      <div className="space-y-3">
-        {results.map((r, i) => (
-          <div key={r.nomination} className="group relative rounded-2xl overflow-hidden transition-all duration-500 hover:scale-[1.01]"
-            style={{ background: 'rgba(13,13,46,.8)', border: `1px solid ${r.color}25` }}>
+      {/* Таблица */}
+      <div className="rounded-2xl overflow-hidden" style={{ border: '1px solid rgba(255,255,255,.07)' }}>
 
-            {/* Левая цветная полоса */}
-            <div className="absolute left-0 top-0 bottom-0 w-1 rounded-l-2xl transition-all duration-300 group-hover:w-1.5"
+        {/* Шапка */}
+        <div className="grid grid-cols-12 gap-4 px-6 py-4"
+          style={{ background: 'rgba(255,255,255,.03)', borderBottom: '1px solid rgba(255,255,255,.07)' }}>
+          <div className="col-span-1 text-white/25 text-xs tracking-[0.2em] uppercase font-semibold">#</div>
+          <div className="col-span-4 text-white/25 text-xs tracking-[0.2em] uppercase font-semibold">Номинация</div>
+          <div className="col-span-4 text-white/25 text-xs tracking-[0.2em] uppercase font-semibold">Победитель</div>
+          <div className="col-span-3 text-white/25 text-xs tracking-[0.2em] uppercase font-semibold">Работа</div>
+        </div>
+
+        {results.map((r, i) => (
+          <div key={r.nomination}
+            className="group relative grid grid-cols-12 gap-4 px-6 py-5 transition-all duration-300 cursor-default"
+            style={{ borderBottom: i < results.length - 1 ? '1px solid rgba(255,255,255,.04)' : 'none' }}>
+
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
+              style={{ background: `linear-gradient(90deg, ${r.color}08 0%, transparent 60%)` }} />
+            <div className="absolute left-0 top-2 bottom-2 w-0.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               style={{ background: r.color }} />
 
-            {/* Фоновый свет при ховере */}
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
-              style={{ background: `radial-gradient(ellipse at left, ${r.color}08 0%, transparent 60%)` }} />
-
-            <div className="relative flex items-center gap-5 px-7 py-5">
-
-              {/* Номер */}
-              <div className="w-9 h-9 rounded-xl flex items-center justify-center text-sm font-black flex-shrink-0"
-                style={{ background: r.color + '15', color: r.color, border: `1px solid ${r.color}35` }}>
+            <div className="col-span-1 flex items-center relative z-10">
+              <div className="w-8 h-8 rounded-lg flex items-center justify-center text-xs font-black"
+                style={{ background: r.color + '15', color: r.color, border: `1px solid ${r.color}30` }}>
                 {String(i + 1).padStart(2, '0')}
-              </div>
-
-              {/* Номинация */}
-              <div className="flex-1 min-w-0">
-                <div className="text-xs tracking-widest uppercase mb-1 font-semibold"
-                  style={{ color: r.color }}>
-                  {r.nomination}
-                </div>
-                <div className="text-white font-bold text-lg leading-tight truncate">{r.winner}</div>
-                <div className="text-white/40 text-xs mt-0.5">{r.author}</div>
-              </div>
-
-              {/* Звезда победителя */}
-              <div className="flex-shrink-0 flex flex-col items-center gap-1">
-                <div className="text-2xl" style={{ filter: `drop-shadow(0 0 8px ${r.color})` }}>★</div>
-                <div className="text-white/20 text-[10px] tracking-widest uppercase">Победитель</div>
               </div>
             </div>
 
-            {/* Нижняя линия-акцент */}
-            <div className="absolute bottom-0 left-7 right-7 h-px opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-              style={{ background: `linear-gradient(90deg, ${r.color}, transparent)` }} />
+            <div className="col-span-4 flex items-center relative z-10">
+              <span className="text-white/55 text-sm group-hover:text-white/90 transition-colors duration-300 font-medium">{r.nomination}</span>
+            </div>
+
+            <div className="col-span-4 flex items-center gap-3 relative z-10">
+              <div className="w-8 h-8 rounded-full flex items-center justify-center text-xs font-black flex-shrink-0"
+                style={{ background: `linear-gradient(135deg, ${r.color}40, ${r.color}10)`, color: r.color }}>
+                {r.winner.charAt(0)}
+              </div>
+              <span className="text-white font-bold text-sm">{r.winner}</span>
+            </div>
+
+            <div className="col-span-3 flex items-center justify-between relative z-10">
+              <span className="text-white/35 text-xs">{r.author}</span>
+              <span className="text-lg transition-all duration-300 group-hover:scale-125"
+                style={{ color: r.color, filter: `drop-shadow(0 0 6px ${r.color}80)` }}>★</span>
+            </div>
           </div>
         ))}
       </div>
