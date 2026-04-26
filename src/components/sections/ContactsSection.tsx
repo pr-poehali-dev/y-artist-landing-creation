@@ -40,9 +40,7 @@ const ContactsSection = () => (
             Заявки<br />
             <span className="text-3d-gold">до 1-го числа каждого месяца</span>
           </h2>
-          <p className="text-white/50 max-w-lg mx-auto mb-10">
-            Осталось меньше 5 месяцев. Начни оформлять заявку прямо сейчас.
-          </p>
+          <p className="text-white/50 max-w-lg mx-auto mb-10">Результаты отборочных туров до 5-го числа каждого месяца.</p>
           <button
             onClick={() => document.getElementById('registration')?.scrollIntoView({ behavior: 'smooth' })}
             className="btn-gold px-12 py-5 text-sm rounded-xl inline-block">
