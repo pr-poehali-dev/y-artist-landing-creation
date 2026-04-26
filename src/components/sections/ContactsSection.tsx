@@ -6,7 +6,7 @@ const contacts = [
 
 const partners = [
   { label: 'MediaHouse', img: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/9f7cfc08-566b-45da-b5ab-73c1809fac3a.png' },
-  { label: 'TechVector', img: null },
+  { label: 'TechVector', img: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/9db51456-6cda-46ed-b75b-1a070971c46c.png' },
   { label: 'NordBureau', img: null },
   { label: 'Axis Studio', img: null },
   { label: 'Meridian', img: null },
