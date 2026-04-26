@@ -57,7 +57,7 @@ const RegistrationSection = () => {
           <div className="lg:col-span-2 space-y-5">
             {[
               { num: '01', title: 'Подача заявки',  date: 'до 1-го числа каждого месяца', color: '#ff3cac' },
-              { num: '02', title: 'Отбор жюри',     date: 'сентябрь–октябрь', color: '#3cf0ff' },
+              { num: '02', title: 'Отбор жюри',     date: 'сентябрь–июнь', color: '#3cf0ff' },
               { num: '03', title: 'Объявление',     date: '15 ноября', color: '#f5c842' },
               { num: '04', title: 'Церемония',      date: '1 декабря 2026', color: '#ff3cac' },
             ].map(step => (
