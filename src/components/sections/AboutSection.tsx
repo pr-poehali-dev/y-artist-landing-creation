@@ -60,7 +60,7 @@ const AboutSection = () => (
               style={{ background: 'linear-gradient(90deg, transparent, #f7c948, #ff2aaa, transparent)' }} />
 
             <div className="relative z-10 p-8 pt-10 mt-40">
-              <div className="text-3d-gold text-3xl font-bold mb-1">Я АРТИСТ</div>
+              <div className="text-3d-gold text-3xl font-bold mb-1">Я - АРТИСТ</div>
               <div className="text-white/50 text-xs tracking-[0.35em] uppercase mb-6">Международная премия</div>
 
               <div className="grid grid-cols-2 gap-3">
