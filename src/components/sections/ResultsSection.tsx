@@ -23,41 +23,6 @@ const ResultsSection = () => (
         </h2>
       </div>
 
-      {/* Гран-при */}
-      <div className="relative rounded-2xl border border-gold/35 bg-gold/5 p-10 mb-12 overflow-hidden glow-gold">
-        <div className="absolute top-0 left-0 right-0 h-px"
-          style={{ background: 'linear-gradient(90deg, transparent, #f5c842, #ff3cac, transparent)' }} />
-
-        <div className="absolute right-8 top-1/2 -translate-y-1/2 text-[10rem] font-black text-gold opacity-5 select-none pointer-events-none leading-none">
-          ★
-        </div>
-
-        {/* Мини-прожекторы */}
-        {[25, 50, 75].map((l, i) => (
-          <div key={i} className="absolute top-0 pointer-events-none"
-            style={{
-              left: `${l}%`, transform: 'translateX(-50%)',
-              width: 100, height: '100%',
-              clipPath: 'polygon(35% 0%, 65% 0%, 100% 100%, 0% 100%)',
-              background: ['rgba(255,60,172,.04)', 'rgba(255,255,255,.03)', 'rgba(60,240,255,.04)'][i],
-            }} />
-        ))}
-
-        <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center gap-8">
-          <div className="px-5 py-2.5 rounded-xl font-black text-sm tracking-widest uppercase flex-shrink-0 btn-gold">
-            Гран-при 2025
-          </div>
-          <div>
-            <h3 className="text-3xl font-bold text-white mb-1">Anya Volkov</h3>
-            <p className="text-white/50">Голос года · Сольная карьера</p>
-          </div>
-          <div className="md:ml-auto text-right">
-            <div className="text-gold text-4xl font-black text-glow-gold">★★★</div>
-            <div className="text-white/30 text-xs tracking-widest mt-1 uppercase">Grand Prix</div>
-          </div>
-        </div>
-      </div>
-
       {/* Таблица */}
       <div className="space-y-2">
         <div className="grid grid-cols-12 gap-4 px-5 pb-3 border-b border-white/5">
