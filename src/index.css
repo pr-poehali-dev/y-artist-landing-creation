@@ -27,14 +27,14 @@
     --ring: 300 80% 65%;
     --radius: 0.75rem;
 
-    --stage-dark: #06061a;
-    --stage-mid: #0d0d2e;
-    --stage-purple: #1a0a3d;
-    --neon-pink: #ff3cac;
-    --neon-blue: #3cf0ff;
-    --neon-violet: #a855f7;
-    --gold: #f5c842;
-    --gold-light: #ffe082;
+    --stage-dark: #05051a;
+    --stage-mid: #0a0a28;
+    --stage-purple: #1e0845;
+    --neon-pink: #ff2aaa;
+    --neon-blue: #4fc3f7;
+    --neon-violet: #9b3dff;
+    --gold: #f7c948;
+    --gold-light: #ffe599;
   }
 }
 

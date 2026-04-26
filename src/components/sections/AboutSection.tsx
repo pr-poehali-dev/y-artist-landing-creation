@@ -42,40 +42,39 @@ const AboutSection = () => (
           </div>
         </div>
 
-        {/* Правая — карточка-сцена */}
+        {/* Правая — фото + карточка */}
         <div className="relative">
-          <div className="relative rounded-2xl overflow-hidden card-show p-10 text-center"
-            style={{ border: '1px solid rgba(245,200,66,.25)' }}>
+          <div className="relative rounded-2xl overflow-hidden"
+            style={{ border: '1px solid rgba(245,200,66,.3)', minHeight: 380 }}>
+
+            {/* Фото как фон карточки */}
+            <img
+              src="https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/e96a0609-d618-436f-8c92-7bb6cc95f588.jpg"
+              alt="Я Артист"
+              className="absolute inset-0 w-full h-full object-cover object-center"
+              style={{ opacity: 0.55 }}
+            />
+            <div className="absolute inset-0"
+              style={{ background: 'linear-gradient(to top, rgba(5,5,26,.95) 0%, rgba(5,5,26,.4) 60%, transparent 100%)' }} />
             <div className="absolute top-0 left-0 right-0 h-px"
-              style={{ background: 'linear-gradient(90deg, transparent, #f5c842, #ff3cac, transparent)' }} />
+              style={{ background: 'linear-gradient(90deg, transparent, #f7c948, #ff2aaa, transparent)' }} />
 
-            {/* Мини-прожекторы */}
-            {[20, 50, 80].map((l, i) => (
-              <div key={i} className="absolute top-0 pointer-events-none"
-                style={{
-                  left: `${l}%`, transform: 'translateX(-50%)',
-                  width: 80, height: '60%',
-                  clipPath: 'polygon(35% 0%, 65% 0%, 100% 100%, 0% 100%)',
-                  background: ['rgba(255,60,172,.06)', 'rgba(255,255,255,.05)', 'rgba(60,240,255,.06)'][i],
-                }} />
-            ))}
-
-            <div className="relative z-10 py-6">
-              <div className="text-6xl mb-3">🎤</div>
-              <div className="text-3d-gold text-4xl font-bold mb-2">Я АРТИСТ</div>
-              <div className="text-white/35 text-xs tracking-[0.35em] uppercase mb-8">Международная премия</div>
+            <div className="relative z-10 p-8 pt-10 mt-40">
+              <div className="text-3d-gold text-3xl font-bold mb-1">Я АРТИСТ</div>
+              <div className="text-white/50 text-xs tracking-[0.35em] uppercase mb-6">Международная премия</div>
 
               <div className="grid grid-cols-2 gap-3">
                 {['Вокал', 'Хореография', 'Театр', 'Кино'].map(cat => (
-                  <div key={cat} className="rounded-lg border border-neon-pink/20 bg-neon-pink/5 py-3 text-center">
-                    <span className="text-white/60 text-sm font-medium">{cat}</span>
+                  <div key={cat} className="rounded-lg py-3 text-center"
+                    style={{ border: '1px solid rgba(255,42,170,.25)', background: 'rgba(255,42,170,.08)', backdropFilter: 'blur(4px)' }}>
+                    <span className="text-white/80 text-sm font-semibold">{cat}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             <div className="absolute bottom-0 left-0 right-0 h-px"
-              style={{ background: 'linear-gradient(90deg, transparent, #3cf0ff, transparent)' }} />
+              style={{ background: 'linear-gradient(90deg, transparent, #4fc3f7, transparent)' }} />
           </div>
 
           <div className="absolute -bottom-4 -right-4 w-20 h-20 rounded-full border border-gold/25 float"
