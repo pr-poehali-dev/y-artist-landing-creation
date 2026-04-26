@@ -1,7 +1,7 @@
 const values = [
   { icon: <img src="https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/7792c344-79af-4d9a-9ee0-a248b663260b.png" className="w-10 h-10 object-contain" />, title: 'Талант', desc: 'Признаём мастерство и уникальный художественный голос в каждой номинации.' },
   { icon: <img src="https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/3b0e1110-fedd-4cd6-827a-3f60ddf4f45d.png" className="w-10 h-10 object-contain" />, title: 'Энергия', desc: 'Отмечаем тех, кто несёт на сцену живую искру и заряжает зрителей.' },
-  { icon: '🌟', title: 'Влияние', desc: 'Чтим артистов, чьё творчество оставляет след в культуре и сердцах людей.' },
+  { icon: <img src="https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/1cccc7d3-4ada-43d0-9fbd-3262d00300eb.png" className="w-10 h-10 object-contain" />, title: 'Влияние', desc: 'Чтим артистов, чьё творчество оставляет след в культуре и сердцах людей.' },
 ];
 
 const AboutSection = () => (
