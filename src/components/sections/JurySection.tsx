@@ -35,10 +35,10 @@ const jury = [
     color: '#3cf0ff',
   },
   {
-    name: 'Максим Орлов',
-    role: 'Кинорежиссёр',
-    desc: 'Режиссёр-лауреат Каннского кинофестиваля, член Европейской киноакадемии',
-    photo: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/files/4a1c677b-22fa-4c9d-a3e1-dd1eef4a45d3.jpg',
+    name: 'Елена Фирсова',
+    role: 'Народный мастер Воронежской области',
+    desc: 'Народный мастер Воронежской области',
+    photo: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/af23ffa5-d7c8-47f4-8062-a45fa15f3692.jpg',
     color: '#f5c842',
   },
   {
