@@ -3,7 +3,7 @@ const jury = [
     name: 'Елена Громова',
     role: 'Художественный директор',
     desc: 'Заслуженный деятель искусств, основатель Московского театра «Свет»',
-    photo: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/files/27eb10fd-70e0-4e2e-9203-f697e6aa6fa3.jpg',
+    photo: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/d1236c9f-e532-4cd1-90be-90d79cdeff1d.png',
     color: '#ff3cac',
   },
   {
