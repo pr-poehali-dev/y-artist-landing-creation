@@ -85,7 +85,7 @@ const ResultsSection = () => (
           ].map(({ year, url }) => (
             <a key={year} href={url} download
               className="flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold transition-all duration-300 hover:border-gold/60 hover:text-gold group"
-              style={{ border: '1px solid rgba(245,200,66,.2)', color: 'rgba(255,255,255,.4)', background: 'rgba(245,200,66,.04)' }}>Итоги отбор 2025/26 (PDF)</a>
+              style={{ border: '1px solid rgba(245,200,66,.2)', color: 'rgba(255,255,255,.4)', background: 'rgba(245,200,66,.04)' }}>Итоги финал 2025/26 (PDF)</a>
           ))}
         </div>
       </div>
