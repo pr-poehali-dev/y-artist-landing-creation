@@ -5,6 +5,7 @@ const links = [
   { href: 'about',        label: 'О премии' },
   { href: 'nominations',  label: 'Номинации' },
   { href: 'gallery',      label: 'Галерея' },
+  { href: 'jury',         label: 'Жюри' },
   { href: 'results',      label: 'Результаты' },
   { href: 'contacts',     label: 'Контакты' },
 ];
