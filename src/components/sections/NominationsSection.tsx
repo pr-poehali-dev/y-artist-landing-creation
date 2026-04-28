@@ -69,18 +69,7 @@ const NominationsSection = () => {
               <h3 className="text-xl font-bold text-white mb-3">{nom.title}</h3>
               <p className="text-white/50 text-sm leading-relaxed mb-6">{nom.desc}</p>
 
-              <div className="flex flex-wrap gap-2">
-                {nom.tags.map(tag => (
-                  <span key={tag} className="px-3 py-1 rounded-full text-xs font-medium border"
-                    style={{
-                      color: nom.color,
-                      borderColor: nom.color + '40',
-                      background: nom.color + '10',
-                    }}>
-                    {tag}
-                  </span>
-                ))}
-              </div>
+
             </div>
           ))}
         </div>
