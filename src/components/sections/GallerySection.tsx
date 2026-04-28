@@ -1,6 +1,6 @@
 const photos = [
   { id: 1, color: '#ff3cac', emoji: '🎤', size: 'large', photo: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/30e45e81-4bf2-40e1-8060-9e20b6a2b569.jpg' },
-  { id: 2, color: '#3cf0ff', emoji: '💃', size: 'small', photo: '' },
+  { id: 2, color: '#3cf0ff', emoji: '💃', size: 'small', photo: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/98715647-c8dc-4a6d-b41d-5ef501c4774d.jpg' },
   { id: 3, color: '#f5c842', emoji: '🎭', size: 'small', photo: '' },
   { id: 4, color: '#ff3cac', emoji: '🎸', size: 'small', photo: '' },
   { id: 5, color: '#3cf0ff', emoji: '🌟', size: 'large', photo: '' },
