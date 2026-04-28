@@ -28,10 +28,10 @@ const jury = [
     color: '#ff3cac',
   },
   {
-    name: 'Ирина Волкова',
-    role: 'Оперная певица',
-    desc: 'Солистка Большого театра, обладательница премии Grammy',
-    photo: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/files/89f55579-fac9-4fdd-abc4-33def62a574e.jpg',
+    name: 'Алексей Хромов',
+    role: 'И.о. заведующего кафедрой музыкально-исполнительского факультета',
+    desc: 'И.о. заведующего кафедрой музыкально-исполнительского факультета ФГБОУ ВО «Самарский государственный институт культуры»',
+    photo: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/18519242-f4be-47c7-84d8-b77eb29d82ee.jpg',
     color: '#3cf0ff',
   },
   {
