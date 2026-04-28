@@ -3,7 +3,7 @@ const results = [
   { nomination: 'Движение и пластика', winner: 'NDC Company',         author: 'Коллектив',         color: '#3cf0ff', medal: '🥇' },
   { nomination: 'Театральный прорыв',  winner: 'Театр Меридиан',     author: 'Постановка «Тень»', color: '#f5c842', medal: '🥇' },
   { nomination: 'Магия сцены',          winner: 'Роман Светлов',      author: 'Режиссёр',          color: '#ff3cac', medal: '🥇' },
-  { nomination: 'Живая сцена',         winner: 'Группа Axis',        author: 'Тур 2025',          color: '#3cf0ff', medal: '🥇' },
+  { nomination: 'Гармония сердца',         winner: 'Группа Axis',        author: 'Тур 2025',          color: '#3cf0ff', medal: '🥇' },
   { nomination: 'Творческий Олимп',    winner: 'Лиза Март',          author: 'Певица',            color: '#f5c842', medal: '🥇' },
 ];
 
