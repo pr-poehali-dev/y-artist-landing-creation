@@ -45,7 +45,7 @@ const jury = [
     name: 'Вячеслав Иванов',
     role: 'Заслуженный артист России',
     desc: 'Заслуженный артист России, актёр, художественный руководитель Московского театра музыкальной комедии «БУФФ-ПАРАДИЗ»',
-    photo: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/187c5d03-2e52-4747-b3d3-7f8897c227af.png',
+    photo: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/1fd29e6b-faba-4a63-bfcb-564e23e24bf3.jpg',
     color: '#ff3cac',
   },
 ];
