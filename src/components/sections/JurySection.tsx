@@ -14,10 +14,10 @@ const jury = [
     color: '#3cf0ff',
   },
   {
-    name: 'Анна Светлова',
-    role: 'Хореограф',
-    desc: 'Прима-балерина, художественный руководитель Академии танца',
-    photo: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/files/71c4c52f-e193-4fa2-ab50-410df1226920.jpg',
+    name: 'Оксана Карнович',
+    role: 'Доцент ФГБОУ ВО «Московская государственная академия хореографии»',
+    desc: 'Член союза театральных деятелей Российской федерации, кандидат искусствоведения',
+    photo: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/d85b729c-6534-45e4-a232-1104cd999ddc.png',
     color: '#f5c842',
   },
   {
