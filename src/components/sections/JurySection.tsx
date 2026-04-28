@@ -91,10 +91,6 @@ const JurySection = () => (
             </div>
 
             <div className="relative p-4" style={{ background: 'rgba(6,6,26,.9)' }}>
-              <div className="text-xs font-semibold mb-1 transition-colors duration-300"
-                style={{ color: member.color }}>
-                {member.role}
-              </div>
               <h3 className="text-white font-bold text-sm leading-tight mb-2">{member.name}</h3>
               <p className="text-white/40 text-xs leading-relaxed">{member.desc}</p>
             </div>
