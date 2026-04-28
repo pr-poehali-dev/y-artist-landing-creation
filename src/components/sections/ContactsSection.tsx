@@ -1,5 +1,5 @@
 const contacts = [
-  { label: 'Email',     value: 'hello@yaartist.ru',  emoji: '✉️', color: '#ff3cac' },
+  { label: 'Email',     value: 'ya-artist@bk.ru',  emoji: '✉️', color: '#ff3cac' },
   { label: 'Телефон',   value: '+7 (922) 415-44-63',  emoji: '📞', color: '#3cf0ff' },
 
 ];
