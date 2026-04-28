@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import func2url from '@/../func2url.json';
+
+const SEND_URL = func2url['send-application'];
 
 const nominationList = [
   'Голос года',
@@ -12,6 +15,8 @@ const nominationList = [
 const RegistrationSection = () => {
   const [form, setForm] = useState({ name: '', email: '', project: '', nomination: '', description: '' });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
   if (submitted) {
     return (
@@ -75,7 +80,24 @@ const RegistrationSection = () => {
           </div>
 
           {/* Форма */}
-          <form onSubmit={e => { e.preventDefault(); setSubmitted(true); }}
+          <form onSubmit={async e => {
+            e.preventDefault();
+            setLoading(true);
+            setError('');
+            try {
+              const res = await fetch(SEND_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(form),
+              });
+              if (!res.ok) throw new Error('Ошибка отправки');
+              setSubmitted(true);
+            } catch {
+              setError('Не удалось отправить заявку. Попробуй ещё раз.');
+            } finally {
+              setLoading(false);
+            }
+          }}
             className="lg:col-span-3 space-y-4">
 
             <div className="grid grid-cols-2 gap-4">
@@ -128,8 +150,9 @@ const RegistrationSection = () => {
                 onBlur={e => (e.target.style.borderColor = 'rgba(255,255,255,.1)')} />
             </div>
 
-            <button type="submit" className="btn-gold w-full py-4 text-sm rounded-lg">
-              Отправить заявку →
+            {error && <p className="text-red-400 text-sm text-center">{error}</p>}
+            <button type="submit" disabled={loading} className="btn-gold w-full py-4 text-sm rounded-lg disabled:opacity-60">
+              {loading ? 'Отправляем...' : 'Отправить заявку →'}
             </button>
           </form>
         </div>
