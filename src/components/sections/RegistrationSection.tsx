@@ -1,7 +1,5 @@
 import { useState } from 'react';
-import func2url from '@/../func2url.json';
-
-const SEND_URL = func2url['send-application'];
+const SEND_URL = 'https://functions.poehali.dev/13c3b21a-bd97-4b7b-93ff-c4d2b2d8e265';
 
 const nominationList = [
   'Голос года',
