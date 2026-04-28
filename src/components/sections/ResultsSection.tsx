@@ -82,7 +82,6 @@ const ResultsSection = () => (
           {[
             { year: '2025', url: '#' },
             { year: '2024', url: '#' },
-            { year: '2023', url: '#' },
             { year: '2022', url: '#' },
           ].map(({ year, url }) => (
             <a key={year} href={url} download
