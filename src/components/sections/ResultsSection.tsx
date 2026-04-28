@@ -1,5 +1,5 @@
 const results = [
-  { nomination: 'Голос года',          winner: 'Анна Карпова',        author: 'Сольная карьера',   color: '#ff3cac', medal: '🥇' },
+  { nomination: 'Голос года',          winner: 'Анна Карпова',        author: 'Listen to me',   color: '#ff3cac', medal: '🥇' },
   { nomination: 'Движение и пластика', winner: 'NDC Company',         author: 'Коллектив',         color: '#3cf0ff', medal: '🥇' },
   { nomination: 'Театральный прорыв',  winner: 'Театр Меридиан',     author: 'Постановка «Тень»', color: '#f5c842', medal: '🥇' },
   { nomination: 'Магия сцены',          winner: 'Роман Светлов',      author: 'Режиссёр',          color: '#ff3cac', medal: '🥇' },
