@@ -10,7 +10,7 @@ const jury = [
     name: 'Виктор Соловьёв',
     role: 'Театральный режиссёр',
     desc: 'Народный артист России, лауреат премии «Золотая маска»',
-    photo: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/files/2fab04e2-e803-4f75-81e5-766a9ec7d79d.jpg',
+    photo: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/21f281cd-aa65-4649-96cd-dc8f96baad5b.jpg',
     color: '#3cf0ff',
   },
   {
