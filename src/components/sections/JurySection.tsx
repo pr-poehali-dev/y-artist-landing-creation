@@ -21,10 +21,10 @@ const jury = [
     color: '#f5c842',
   },
   {
-    name: 'Дмитрий Карпов',
-    role: 'Музыкальный продюсер',
-    desc: 'Продюсер более 50 платиновых альбомов, основатель студии KarpSound',
-    photo: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/files/ea122113-49a9-453c-92fb-d125a7df094b.jpg',
+    name: 'Людмила Негода',
+    role: 'Кандидат философских наук',
+    desc: 'Кандидат философских наук, доцент кафедры хореографического искусства Луганской государственной академии культуры и искусств имени М.Матусовского',
+    photo: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/2ea7a9f6-c42a-431d-95c3-dd21683228f3.jpg',
     color: '#ff3cac',
   },
   {
