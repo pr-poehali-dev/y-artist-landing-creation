@@ -1,12 +1,12 @@
 const photos = [
-  { id: 1, color: '#ff3cac', emoji: '🎤', size: 'large' },
-  { id: 2, color: '#3cf0ff', emoji: '💃', size: 'small' },
-  { id: 3, color: '#f5c842', emoji: '🎭', size: 'small' },
-  { id: 4, color: '#ff3cac', emoji: '🎸', size: 'small' },
-  { id: 5, color: '#3cf0ff', emoji: '🌟', size: 'large' },
-  { id: 6, color: '#f5c842', emoji: '🎬', size: 'small' },
-  { id: 7, color: '#ff3cac', emoji: '🎤', size: 'small' },
-  { id: 8, color: '#3cf0ff', emoji: '💃', size: 'small' },
+  { id: 1, color: '#ff3cac', emoji: '🎤', size: 'large', photo: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/30e45e81-4bf2-40e1-8060-9e20b6a2b569.jpg' },
+  { id: 2, color: '#3cf0ff', emoji: '💃', size: 'small', photo: '' },
+  { id: 3, color: '#f5c842', emoji: '🎭', size: 'small', photo: '' },
+  { id: 4, color: '#ff3cac', emoji: '🎸', size: 'small', photo: '' },
+  { id: 5, color: '#3cf0ff', emoji: '🌟', size: 'large', photo: '' },
+  { id: 6, color: '#f5c842', emoji: '🎬', size: 'small', photo: '' },
+  { id: 7, color: '#ff3cac', emoji: '🎤', size: 'small', photo: '' },
+  { id: 8, color: '#3cf0ff', emoji: '💃', size: 'small', photo: '' },
 ];
 
 const GallerySection = () => (
@@ -34,9 +34,13 @@ const GallerySection = () => (
             <div className="absolute top-0 left-0 right-0 h-0.5"
               style={{ background: `linear-gradient(90deg, ${p.color}, transparent)` }} />
 
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-8xl opacity-10 group-hover:opacity-20 transition-opacity select-none pointer-events-none">
-              {p.emoji}
-            </div>
+            {p.photo ? (
+              <img src={p.photo} alt="" className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500" />
+            ) : (
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-8xl opacity-10 group-hover:opacity-20 transition-opacity select-none pointer-events-none">
+                {p.emoji}
+              </div>
+            )}
 
             <div className="absolute inset-0 opacity-10"
               style={{
