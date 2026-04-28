@@ -2,11 +2,11 @@ const photos = [
   { id: 1, color: '#ff3cac', emoji: '🎤', size: 'large', photo: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/30e45e81-4bf2-40e1-8060-9e20b6a2b569.jpg' },
   { id: 2, color: '#3cf0ff', emoji: '💃', size: 'small', photo: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/98715647-c8dc-4a6d-b41d-5ef501c4774d.jpg' },
   { id: 3, color: '#f5c842', emoji: '🎭', size: 'small', photo: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/961d1c40-f3d6-4b09-852c-d652eab9a063.jpg' },
-  { id: 4, color: '#ff3cac', emoji: '🎸', size: 'small', photo: '' },
-  { id: 5, color: '#3cf0ff', emoji: '🌟', size: 'large', photo: '' },
-  { id: 6, color: '#f5c842', emoji: '🎬', size: 'small', photo: '' },
-  { id: 7, color: '#ff3cac', emoji: '🎤', size: 'small', photo: '' },
-  { id: 8, color: '#3cf0ff', emoji: '💃', size: 'small', photo: '' },
+  { id: 4, color: '#ff3cac', emoji: '🎸', size: 'small', photo: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/3f337939-eafc-4f0b-84b7-127f20ef0e71.jpg' },
+  { id: 5, color: '#3cf0ff', emoji: '🌟', size: 'large', photo: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/f6d906b0-5c19-45e3-ba35-840653413a2e.jpg' },
+  { id: 6, color: '#f5c842', emoji: '🎬', size: 'small', photo: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/52a23b98-e933-48f2-8a69-e9bbf8cafdb3.jpg' },
+  { id: 7, color: '#ff3cac', emoji: '🎤', size: 'small', photo: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/5b1fd60f-c6f2-4863-bd48-b0cbb2bfc77f.jpg' },
+  { id: 8, color: '#3cf0ff', emoji: '💃', size: 'small', photo: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/e3c57e43-634b-47db-90cd-02d4e98741e3.jpg' },
 ];
 
 const GallerySection = () => (
