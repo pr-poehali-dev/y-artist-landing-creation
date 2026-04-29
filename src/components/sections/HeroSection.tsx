@@ -44,22 +44,6 @@ const HeroSection = () => {
 
       </div>
 
-      {/* Счётчики поверх фото снизу */}
-      <div className="absolute bottom-6 left-0 right-0 z-20 flex gap-10 justify-center">
-        {[
-          { val: '6',   label: 'Номинаций' },
-          { val: '500+', label: 'Участников' },
-          { val: '5',    label: 'Лет на сцене' },
-        ].map(s => (
-          <div key={s.label} className="text-center">
-            <div className="text-3xl font-black text-gold text-glow-gold">{s.val}</div>
-            <div className="text-white/70 text-xs tracking-widest uppercase mt-1"
-              style={{ textShadow: '0 1px 8px rgba(0,0,0,.9)' }}>
-              {s.label}
-            </div>
-          </div>
-        ))}
-      </div>
 
       <div className="absolute bottom-0 left-0 right-0 divider-glow z-20" />
     </section>
