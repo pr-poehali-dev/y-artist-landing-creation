@@ -16,7 +16,7 @@ const ResultsSection = () => (
     <div className="absolute left-1/4 top-1/3 w-64 h-64 rounded-full blur-3xl opacity-6 pointer-events-none"
       style={{ background: '#ff3cac' }} />
 
-    <div className="relative z-10 max-w-5xl mx-auto px-6">
+    <div className="relative z-10 max-w-7xl mx-auto px-6">
       <div className="text-center mb-16">
         <div className="text-gold text-xs tracking-[0.3em] uppercase mb-4 font-semibold">Победители</div>
         <h2 className="text-5xl md:text-6xl font-bold text-white leading-tight">
@@ -29,42 +29,42 @@ const ResultsSection = () => (
       <div className="rounded-2xl overflow-hidden" style={{ border: '1px solid rgba(255,255,255,.07)' }}>
 
         {/* Шапка */}
-        <div className="grid grid-cols-12 gap-4 px-8 py-5"
+        <div className="grid grid-cols-12 gap-6 px-10 py-6"
           style={{ background: 'rgba(255,255,255,.03)', borderBottom: '1px solid rgba(255,255,255,.07)' }}>
-          <div className="col-span-1 text-white/25 text-xs tracking-[0.2em] uppercase font-semibold">#</div>
-          <div className="col-span-5 text-white/25 text-xs tracking-[0.2em] uppercase font-semibold">Номинация</div>
-          <div className="col-span-4 text-white/25 text-xs tracking-[0.2em] uppercase font-semibold">Победитель</div>
-          <div className="col-span-2 text-white/25 text-xs tracking-[0.2em] uppercase font-semibold">Работа</div>
+          <div className="col-span-1 text-white/25 text-sm tracking-[0.2em] uppercase font-semibold">#</div>
+          <div className="col-span-5 text-white/25 text-sm tracking-[0.2em] uppercase font-semibold">Номинация</div>
+          <div className="col-span-4 text-white/25 text-sm tracking-[0.2em] uppercase font-semibold">Победитель</div>
+          <div className="col-span-2 text-white/25 text-sm tracking-[0.2em] uppercase font-semibold">Работа</div>
         </div>
 
         {results.map((r, i) => (
           <div key={r.nomination}
-            className="group relative grid grid-cols-12 gap-4 px-8 py-6 transition-all duration-300 cursor-default"
+            className="group relative grid grid-cols-12 gap-6 px-10 py-8 transition-all duration-300 cursor-default"
             style={{ borderBottom: i < results.length - 1 ? '1px solid rgba(255,255,255,.04)' : 'none' }}>
 
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
               style={{ background: `linear-gradient(90deg, ${r.color}08 0%, transparent 60%)` }} />
-            <div className="absolute left-0 top-2 bottom-2 w-0.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            <div className="absolute left-0 top-2 bottom-2 w-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               style={{ background: r.color }} />
 
             <div className="col-span-1 flex items-center relative z-10">
-              <div className="w-9 h-9 rounded-lg flex items-center justify-center text-sm font-black"
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center text-base font-black"
                 style={{ background: r.color + '15', color: r.color, border: `1px solid ${r.color}30` }}>
                 {String(i + 1).padStart(2, '0')}
               </div>
             </div>
 
             <div className="col-span-5 flex items-center relative z-10">
-              <span className="text-white/55 text-base group-hover:text-white/90 transition-colors duration-300 font-medium">{r.nomination}</span>
+              <span className="text-white/55 text-xl group-hover:text-white/90 transition-colors duration-300 font-medium">{r.nomination}</span>
             </div>
 
             <div className="col-span-4 flex items-center relative z-10">
-              <span className="text-white/30 text-base">—</span>
+              <span className="text-white/30 text-xl">—</span>
             </div>
 
             <div className="col-span-2 flex items-center justify-between relative z-10">
-              <span className="text-white/30 text-base">—</span>
-              <span className="text-lg transition-all duration-300 group-hover:scale-125"
+              <span className="text-white/30 text-xl">—</span>
+              <span className="text-2xl transition-all duration-300 group-hover:scale-125"
                 style={{ color: r.color, filter: `drop-shadow(0 0 6px ${r.color}80)` }}>★</span>
             </div>
           </div>
