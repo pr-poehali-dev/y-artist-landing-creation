@@ -7,7 +7,7 @@ const contacts = [
 const partners = [
   { label: 'MediaHouse', img: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/9f7cfc08-566b-45da-b5ab-73c1809fac3a.png' },
   { label: 'TechVector', img: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/9db51456-6cda-46ed-b75b-1a070971c46c.png' },
-  { label: '', img: null },
+  { label: 'На Олимпе', img: 'https://cdn.poehali.dev/projects/2ddec51a-c1ca-482a-ac82-361f593e7be2/bucket/66a96d90-59f9-4538-9d63-6d1b59a0b94b.png' },
   { label: '', img: null },
   { label: '', img: null },
   { label: '', img: null },
