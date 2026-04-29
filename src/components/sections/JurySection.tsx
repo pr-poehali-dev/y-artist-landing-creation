@@ -66,9 +66,7 @@ const JurySection = () => (
           Состав<br />
           <span className="text-3d-gold">жюри</span>
         </h2>
-        <p className="text-white/50 mt-6 max-w-xl mx-auto">
-          Выдающиеся деятели культуры и искусства, которые определяют лауреатов премии «Я — Артист».
-        </p>
+        <p className="text-white/50 mt-6 max-w-xl mx-auto">Выдающиеся деятели культуры и искусства, которые определяют победителей и призеров премии «Я — Артист».</p>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
