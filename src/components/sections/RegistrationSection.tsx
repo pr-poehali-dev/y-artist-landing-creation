@@ -62,7 +62,7 @@ const RegistrationSection = () => {
               { num: '01', title: 'Подача заявки',  date: 'до 1-го числа каждого месяца', color: '#ff3cac' },
               { num: '02', title: 'Отбор жюри',     date: 'сентябрь–июнь', color: '#3cf0ff' },
               { num: '03', title: 'Объявление',     date: '5-го числа каждого месяца', color: '#f5c842' },
-              { num: '04', title: 'Церемония',      date: '27 июня 2027', color: '#ff3cac' },
+              { num: '04', title: 'Церемония',      date: '29 июня 2027', color: '#ff3cac' },
             ].map(step => (
               <div key={step.num} className="flex gap-4 items-start">
                 <div className="w-10 h-10 rounded-xl flex items-center justify-center text-xs font-black flex-shrink-0"
