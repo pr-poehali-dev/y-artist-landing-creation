@@ -50,9 +50,7 @@ const RegistrationSection = () => {
             Подать<br />
             <span className="text-3d-gold">заявку</span>
           </h2>
-          <p className="text-white/50 mt-6 max-w-xl mx-auto">
-            Приём заявок открыт до 1 сентября 2026. Заполни форму — мы рассмотрим каждую работу.
-          </p>
+          <p className="text-white/50 mt-6 max-w-xl mx-auto">Приём заявок открыт до 1 июня 2027. Заполни форму — мы рассмотрим каждую работу.</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 items-start">
