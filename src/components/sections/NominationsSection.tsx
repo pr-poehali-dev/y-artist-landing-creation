@@ -73,6 +73,17 @@ const NominationsSection = () => {
             </div>
           ))}
         </div>
+
+        <div className="flex justify-center mt-12">
+          <a href="https://disk.yandex.ru/d/H7gXaZKaF225Iw" target="_blank" rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 px-10 py-5 rounded-2xl text-base font-bold transition-all duration-300 hover:scale-105"
+            style={{ border: '1px solid rgba(245,200,66,.5)', color: 'rgba(245,200,66,.9)', background: 'rgba(245,200,66,.1)', boxShadow: '0 0 24px rgba(245,200,66,.15)' }}>
+            <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+            </svg>
+            Скачать положение о Премии (PDF)
+          </a>
+        </div>
       </div>
     </section>
   );
