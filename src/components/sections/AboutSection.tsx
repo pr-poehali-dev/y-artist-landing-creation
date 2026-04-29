@@ -33,7 +33,7 @@ const AboutSection = () => (
           <p className="text-white/60 text-lg leading-relaxed mb-5">«Я - Артист» — это не просто церемония. Это момент, когда сцена признаёт лучших — тех, кто отдаёт себя искусству без остатка.</p>
           <p className="text-white/45 leading-relaxed">Каждый год мы выбираем исполнителей, актеров, танцовщиков, музыкантов и творцов, которые двигают творчество вперёд. Наши лауреаты — это легенды завтрашнего дня.</p>
           <div className="mt-10">
-            <a href="#" download
+            <a href="https://disk.yandex.ru/d/H7gXaZKaF225Iw" target="_blank" rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-8 py-4 rounded-xl text-base font-bold transition-all duration-300 hover:scale-105"
               style={{ border: '1px solid rgba(245,200,66,.5)', color: 'rgba(245,200,66,.9)', background: 'rgba(245,200,66,.1)', boxShadow: '0 0 20px rgba(245,200,66,.15)' }}>
               <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
