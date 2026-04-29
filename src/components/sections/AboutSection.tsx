@@ -57,7 +57,9 @@ const AboutSection = () => (
 
             <div className="relative z-10 p-8 pt-10 mt-40">
               <div className="text-3d-gold text-3xl font-bold mb-1">Я - АРТИСТ</div>
-              <div className="text-white/50 text-xs tracking-[0.35em] uppercase mb-6">Международная премия</div>
+              <div className="text-white/50 text-xs tracking-[0.35em] uppercase mb-6">всероссийская премия с международным участием
+в области художественного творчества и исполнительских искусств 
+</div>
 
               <div className="grid grid-cols-2 gap-3">
                 {['Вокал', 'Хореография', 'Театр', 'Музыка'].map(cat => (
