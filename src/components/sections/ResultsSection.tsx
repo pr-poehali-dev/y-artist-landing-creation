@@ -73,16 +73,16 @@ const ResultsSection = () => (
 
       {/* Архив */}
       <div className="mt-14">
-        <div className="text-center text-white/30 text-sm mb-5">Архив результатов</div>
-        <div className="flex flex-wrap gap-3 justify-center">
+        <div className="text-center text-white/40 text-base mb-6">Архив результатов</div>
+        <div className="flex flex-wrap gap-5 justify-center">
           {[
-            { label: 'Итоги финал 2025/26 (PDF)', url: '#' },
-            { label: 'Итоги отбор 2025/26 (PDF)', url: '#' },
+            { label: 'Итоги финал 2026/27 (PDF)', url: '#' },
+            { label: 'Итоги отбор 2026/27 (PDF)', url: '#' },
           ].map(({ label, url }) => (
             <a key={label} href={url} download
-              className="flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold transition-all duration-300 hover:border-gold/60 hover:text-gold group"
-              style={{ border: '1px solid rgba(245,200,66,.2)', color: 'rgba(255,255,255,.4)', background: 'rgba(245,200,66,.04)' }}>
-              <svg className="w-4 h-4 flex-shrink-0 group-hover:translate-y-0.5 transition-transform" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+              className="flex items-center gap-3 px-8 py-5 rounded-2xl text-base font-bold transition-all duration-300 hover:scale-105 group"
+              style={{ border: '1px solid rgba(245,200,66,.5)', color: 'rgba(245,200,66,.9)', background: 'rgba(245,200,66,.1)', boxShadow: '0 0 20px rgba(245,200,66,.15)' }}>
+              <svg className="w-5 h-5 flex-shrink-0 group-hover:translate-y-0.5 transition-transform" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
               </svg>
               {label}
