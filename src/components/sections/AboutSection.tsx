@@ -32,9 +32,15 @@ const AboutSection = () => (
           </h2>
           <p className="text-white/60 text-lg leading-relaxed mb-5">«Я - Артист» — это не просто церемония. Это момент, когда сцена признаёт лучших — тех, кто отдаёт себя искусству без остатка.</p>
           <p className="text-white/45 leading-relaxed">Каждый год мы выбираем исполнителей, актеров, танцовщиков, музыкантов и творцов, которые двигают творчество вперёд. Наши лауреаты — это легенды завтрашнего дня.</p>
-          <div className="mt-10 flex items-center gap-6">
-            <div className="h-px flex-1" style={{ background: 'linear-gradient(to right, rgba(255,60,172,.6), transparent)' }} />
-            <span className="text-gold text-sm tracking-widest uppercase font-semibold">Est. 2021</span>
+          <div className="mt-10">
+            <a href="#" download
+              className="inline-flex items-center gap-3 px-8 py-4 rounded-xl text-base font-bold transition-all duration-300 hover:scale-105"
+              style={{ border: '1px solid rgba(245,200,66,.5)', color: 'rgba(245,200,66,.9)', background: 'rgba(245,200,66,.1)', boxShadow: '0 0 20px rgba(245,200,66,.15)' }}>
+              <svg className="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16" />
+              </svg>
+              Положение (PDF)
+            </a>
           </div>
         </div>
 
